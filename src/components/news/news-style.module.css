@@ -1,0 +1,49 @@
+.container {
+    padding: 32px;
+    max-width: 1076px;
+}
+
+.scrollParagraph {
+    max-height: 945px;
+    overflow: auto;
+}
+
+.headerH2 {
+    margin-bottom: 16px;
+    font-family: 'montserratbold', Arial, sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+}
+
+.headerH3 {
+    margin-bottom: 24px;
+    font-family: 'montserratmedium', Arial, sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.paragraph {
+    font-family: 'montserratmedium', Arial, sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.paragraphLink {
+    color: -webkit-link;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--main-color);
+    ;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #E5E5E5;
+}

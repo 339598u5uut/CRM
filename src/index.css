@@ -1,13 +1,76 @@
+@font-face {
+    font-family: 'montserratsemibold';
+    src: local('montserratsemibold'), url('./fonts/montserrat-semibold-webfont.woff2') format('woff2'), url('./fonts/montserrat-semibold-webfont.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'montserratbold';
+    src: local('montserratbold'), url('./fonts/montserrat-bold-webfont.woff2') format('woff2'), url('./fonts/montserrat-bold-webfont.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'montserratmedium';
+    src: local('montserratmedium'), url('./fonts/montserrat-medium-webfont.woff2') format('woff2'), url('./fonts/montserrat-medium-webfont.woff') format('woff');
+    font-weight: medium;
+    font-style: normal;
+}
+
+:root {
+    --main-color: #4F27BF;
+}
+
+html {
+    box-sizing: border-box;
+}
+
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    margin: 0;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+button {
+    padding: 0;
+    border: none;
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+input,
+p,
+ul {
+    margin: 0;
+    padding: 0
+}
+
+input {
+    border: none;
+    border-style: none;
+    padding: 23px 24px;
+    height: 70px;
+    border-radius: 10px;
+    border: 3px solid rgba(79, 39, 191, 1);
+    box-sizing: border-box;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }

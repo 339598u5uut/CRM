@@ -1,0 +1,26 @@
+.paragraph {
+    margin-bottom: 30px;
+    font-family: 'montserratbold', Arial, sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    text-align: center;
+}
+
+.list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 40px;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+}
+
+.link {
+    padding-top: 15px;
+}
