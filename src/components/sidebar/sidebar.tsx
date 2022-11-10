@@ -2,11 +2,14 @@ import style from './sidebar-style.module.css'
 import { NavLink } from 'react-router-dom';
 import { FC, useState } from 'react';
 import Icons from '../icons';
+import { CSSTransition } from 'react-transition-group';
 
 export const Sidebar: FC = () => {
 
 	const [dropdownVisible, setDropdownVisible] = useState(false);
-	const toggleChecked = () => setDropdownVisible(dropdownVisible => !dropdownVisible);
+	const toggleChecked = () => {
+		setDropdownVisible(dropdownVisible => !dropdownVisible)
+	};
 
 	return (
 		<nav className={style.container}>
@@ -84,46 +87,63 @@ export const Sidebar: FC = () => {
 						<div className={style.settings} onClick={() => toggleChecked()}>
 							<div className={style.settingsItem}>
 								<Icons name='settings' width={32} height={34} />
-								<button type="button">Настройки</button>
+								<button type='button'>Настройки</button>
 							</div>
+
 							{dropdownVisible ?
 								<Icons name='dropdownClose' width={13} height={12} /> :
 								<Icons name='dropdownOpen' width={13} height={12} />}
 						</div>
 
 						{dropdownVisible ?
-							<ul className={style.listInserted}>
 
-								<li className={style.dropdownIcon}>
-									<Icons name='dropdownProfileSettings' width={30} height={35} />
-									<NavLink
-										activeClassName={style.active}
-										to={{ pathname: '/profile_settings' }}
-										exact={true}
-										className={`${style.link}${style.link_dropdown}`}
-									>Настройки
-										профиля
-									</NavLink>
-								</li>
+							<CSSTransition
+								in={dropdownVisible}
+								timeout={300}
+								classNames={{
+									appear: style.exampleAppear,
+									appearActive: style.exampleAppearActive,
+									exit: style.exampleExit,
+									exitActive: style.exampleExitActive,
 
-								<li className={style.dropdownIcon}>
-									<Icons name='dropdownFinancialManagement' width={32} height={32} />
-									<NavLink
-										activeClassName={style.active}
-										to={{ pathname: '/financial_management' }}
-										exact={true}
-										className={`${style.link}${style.link_dropdown}`}
-									>Управление
-										финансами
-									</NavLink>
-								</li>
-							</ul> : null
+								}}
+								unmountonexit='true'
+								appear='true'
+							>
+
+								<ul className={style.listInserted} >
+									<li className={style.dropdownIcon}>
+										<Icons name='dropdownProfileSettings' width={30} height={35} />
+										<NavLink
+											activeClassName={style.active}
+											to={{ pathname: '/profile_settings' }}
+											exact={true}
+											className={`${style.link}${style.link_dropdown}`}
+										>Настройки
+											профиля
+										</NavLink>
+									</li>
+
+									<li className={style.dropdownIcon}>
+										<Icons name='dropdownFinancialManagement' width={32} height={32} />
+										<NavLink
+											activeClassName={style.active}
+											to={{ pathname: '/financial_management' }}
+											exact={true}
+											className={`${style.link}${style.link_dropdown}`}
+										>Управление
+											финансами
+										</NavLink>
+									</li>
+								</ul>
+							</CSSTransition>
+							: null
 						}
 					</li>
 
 					<li className={style.item}>
 						<Icons name='exit' width={32} height={32} />
-						<button type="submit">Выход</button>
+						<button type='submit'>Выход</button>
 					</li>
 				</ul>
 			</div>

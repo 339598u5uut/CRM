@@ -6,11 +6,24 @@
     text-align: center;
 }
 
+.nav {
+    position: absolute;
+    top: 80px;
+    right: 0;
+    left: 0;
+    padding: 40px 20px;
+    height: 100vh;
+    color: black;
+    background-color: white;
+}
+
 .list {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-column-gap: 20px;
     grid-row-gap: 40px;
+    align-content: start;
+    overflow: hidden;
 }
 
 .item {
@@ -23,4 +36,23 @@
 
 .link {
     padding-top: 15px;
+}
+
+.exampleAppear {
+    opacity: 0;
+    transform: translateY(-30%);
+}
+
+.exampleAppearActive {
+    opacity: 1;
+    transform: translateY(0);
+    transition: .3s ease-in-out;
+}
+
+.exampleExit {
+    opacity: 1;
+}
+
+.exampleExitActive {
+    opacity: 0;
 }

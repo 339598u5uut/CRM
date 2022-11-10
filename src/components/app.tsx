@@ -9,10 +9,10 @@ const App: FC = () => {
     <>
       <Header />
       <Switch>
-        <Route path="/" exact={true}>
+        <Route path='/' exact={true}>
           <MainPage />
         </Route>
-        <Route path="/address" exact={true}>
+        <Route path='/address' exact={true}>
           <AddressPage />
         </Route>
       </Switch>
