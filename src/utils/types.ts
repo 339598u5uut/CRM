@@ -12,5 +12,4 @@ export type TData = {
 export type TBurgerMenu = {
 	isOpen: () => void;
 	onClose: () => void;
-	className:string;
 }

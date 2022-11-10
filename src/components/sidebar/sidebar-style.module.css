@@ -53,6 +53,34 @@
     row-gap: 32px;
 }
 
+
+/* .exampleEnter {
+    opacity: 0;
+}
+
+.exampleEnterActive {
+    opacity: 1;
+} */
+
+.exampleAppear {
+    opacity: 0;
+    transform: translateY(-30%);
+}
+
+.exampleAppearActive {
+    opacity: 1;
+    transform: translateY(0);
+    transition: .3s ease-in-out;
+}
+
+.exampleExit {
+    opacity: 1;
+}
+
+.exampleExitActive {
+    opacity: 0;
+}
+
 .dropdownIcon {
     display: grid;
     grid-template-columns: 44px 118px;

@@ -74,6 +74,11 @@
     color: white;
 }
 
+.button:hover {
+    background-color: #381c83;
+    transition: 0.5s;
+}
+
 .icon {
     padding-right: 16px;
 }

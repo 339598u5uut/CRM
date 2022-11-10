@@ -30,19 +30,12 @@
     position: absolute;
     top: 80px;
     left: 0;
-    right: 0;
     padding: 15px;
     width: 100%;
     height: auto;
     background-color: white;
     color: black;
-    transform: translateY(-100%);
-    transition: all 0.3s;
-}
-
-.visible {
-    transition: all 0.3s;
-    transform: translateY(0px);
+    box-sizing: border-box;
 }
 
 .item {
@@ -63,6 +56,10 @@
 }
 
 @media (min-width:320px) and (max-width:768px) {
+    .header {
+        position: sticky;
+        top: 0;
+    }
     .paragraph {
         display: none;
     }
