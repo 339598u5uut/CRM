@@ -1,4 +1,4 @@
-import style from './sidebar-style.module.css'
+import style from './sidebar-style.module.css';
 import { NavLink } from 'react-router-dom';
 import { FC, useState } from 'react';
 import Icons from '../icons';
@@ -7,7 +7,7 @@ import { CSSTransition } from 'react-transition-group';
 export const Sidebar: FC = () => {
 
 	const [dropdownVisible, setDropdownVisible] = useState(false);
-	const toggleChecked = () => {
+	const toggleVisible = () => {
 		setDropdownVisible(dropdownVisible => !dropdownVisible)
 	};
 
@@ -17,74 +17,80 @@ export const Sidebar: FC = () => {
 			<div className={style.divScroll}>
 				<ul className={style.list}>
 
-					<li className={style.item}>
-						<Icons name='home' width={32} height={32} />
+					<li>
 						<NavLink
 							activeClassName={style.active}
 							to={{ pathname: '/' }}
 							exact={true}
 							className={style.link}
-						>Главная
+						>
+							<Icons name='home' width={32} height={32} />
+							Главная
 						</NavLink>
 					</li>
 
-					<li className={style.item}>
-						<Icons name='address' width={32} height={32} />
+					<li>
 						<NavLink
 							activeClassName={style.active}
 							to={{ pathname: '/address' }}
 							exact={true}
 							className={style.link}
-						>Поиск адресов
+						>
+							<Icons name='address' width={32} height={32} />
+							Поиск адресов
 						</NavLink>
 					</li>
 
-					<li className={style.item}>
-						<Icons name='tables' width={32} height={32} />
+					<li>
 						<NavLink
 							activeClassName={style.active}
 							to={{ pathname: '/tables' }}
 							exact={true}
 							className={style.link}
-						>Таблицы
+						>
+							<Icons name='tables' width={32} height={32} />
+							Таблицы
 						</NavLink>
 					</li>
 
-					<li className={style.item}>
-						<Icons name='calendar' width={32} height={32} />
+					<li>
 						<NavLink
 							activeClassName={style.active}
 							to={{ pathname: '/calendar' }}
 							exact={true}
 							className={style.link}
-						>Календарь
+						>
+							<Icons name='calendar' width={32} height={32} />
+							Календарь
 						</NavLink>
 					</li>
 
-					<li className={style.item}>
-						<Icons name='cards' width={25} height={32} />
+					<li>
 						<NavLink
 							activeClassName={style.active}
 							to={{ pathname: '/cards' }}
 							exact={true}
 							className={style.link}
-						>Карты
+						>
+							<Icons name='cards' width={25} height={32} />
+							Карты
 						</NavLink>
 					</li>
 
-					<li className={style.item}>
-						<Icons name='widgets' width={32} height={30} />
+					<li>
 						<NavLink
 							activeClassName={style.active}
 							to={{ pathname: '/widgets' }}
 							exact={true}
 							className={style.link}
-						>Виджеты
+						>
+							<Icons name='widgets' width={32} height={30} />
+							Виджеты
 						</NavLink>
 					</li>
 
 					<li>
-						<div className={style.settings} onClick={() => toggleChecked()}>
+						<div className={style.settings} onClick={() => toggleVisible()}>
 							<div className={style.settingsItem}>
 								<Icons name='settings' width={32} height={34} />
 								<button type='button'>Настройки</button>

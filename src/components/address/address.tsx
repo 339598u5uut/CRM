@@ -62,7 +62,7 @@ export const Address: FC = () => {
 					<span className={style.icon}>
 						<Icons name='search' width={32} height={32} />
 					</span>
-					Поиск
+					<span className={style.buttonText}>Поиск</span>
 				</button>
 			</form>
 

@@ -53,15 +53,6 @@
     row-gap: 32px;
 }
 
-
-/* .exampleEnter {
-    opacity: 0;
-}
-
-.exampleEnterActive {
-    opacity: 1;
-} */
-
 .exampleAppear {
     opacity: 0;
     transform: translateY(-30%);
@@ -87,7 +78,15 @@
     align-items: center;
 }
 
-.link:hover {
+.link {
+    display: flex;
+    align-items: center;
+    column-gap: 16px;
+}
+
+.link:hover,
+.dropdownIcon:hover,
+.settings:hover {
     color: #381c83;
 }
 
