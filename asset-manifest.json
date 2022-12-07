@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "./https://339598u5uut.github.io/CRM/static/css/main.6d717c9b.css",
+    "main.js": "./https://339598u5uut.github.io/CRM/static/js/main.d5b439fe.js",
+    "static/js/787.920d0757.chunk.js": "./https://339598u5uut.github.io/CRM/static/js/787.920d0757.chunk.js",
+    "static/media/montserrat-bold-webfont.woff": "./https://339598u5uut.github.io/CRM/static/media/montserrat-bold-webfont.9877a5d29f4314fe4a39.woff",
+    "static/media/montserrat-medium-webfont.woff": "./https://339598u5uut.github.io/CRM/static/media/montserrat-medium-webfont.bb76e16e6c714fdc50db.woff",
+    "static/media/montserrat-semibold-webfont.woff": "./https://339598u5uut.github.io/CRM/static/media/montserrat-semibold-webfont.af06c189b06b14ea3380.woff",
+    "static/media/montserrat-bold-webfont.woff2": "./https://339598u5uut.github.io/CRM/static/media/montserrat-bold-webfont.347d36c8c8b9376a1b43.woff2",
+    "static/media/montserrat-medium-webfont.woff2": "./https://339598u5uut.github.io/CRM/static/media/montserrat-medium-webfont.17c27a6d318d7f21bedc.woff2",
+    "static/media/montserrat-semibold-webfont.woff2": "./https://339598u5uut.github.io/CRM/static/media/montserrat-semibold-webfont.d16dd63538a36e7f5056.woff2",
+    "static/media/icons.svg": "./https://339598u5uut.github.io/CRM/static/media/icons.cf35932dcc2ff8e4a95619031e16bec5.svg",
+    "index.html": "./https://339598u5uut.github.io/CRM/index.html",
+    "main.6d717c9b.css.map": "./https://339598u5uut.github.io/CRM/static/css/main.6d717c9b.css.map",
+    "main.d5b439fe.js.map": "./https://339598u5uut.github.io/CRM/static/js/main.d5b439fe.js.map",
+    "787.920d0757.chunk.js.map": "./https://339598u5uut.github.io/CRM/static/js/787.920d0757.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6d717c9b.css",
+    "static/js/main.d5b439fe.js"
+  ]
+}
