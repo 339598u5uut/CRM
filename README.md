@@ -21,7 +21,7 @@
 * npm i
 * npm start
 
-## Перейти в проект: [GitHubPages](https://339598u5uut.github.io/CRM/)
+## Перейти в приложение: [GitHubPages](https://339598u5uut.github.io/CRM/)
 
 
-# Getting Started with Create React App
+### Getting Started with Create React App
